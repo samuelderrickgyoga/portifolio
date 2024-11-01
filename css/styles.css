@@ -1,0 +1,379 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    /* Light gray background */
+}
+
+/* Navbar Styles */
+header {
+    background-color: #0044cc;
+    /* Blue color for navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fa1924;
+    
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/software-developer-6521720_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    
+    backdrop-filter: blur(8px) saturate(150%);
+    cursor: pointer;
+    color: white;
+   
+}
+.hero-content:hover{
+    box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero pre {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #ff7755;
+}
+
+/* Section Styles */
+.section {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+#about {
+    background-color: #ddd;
+}
+
+#projects {
+    background-color: #bbb;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.project {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #999;
+    color: #fff;
+    background-image: url('../images/binary-code-4437421_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+.contact-container {
+    display: flex;
+    gap: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.contact-form {
+    
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    padding: 15px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    backdrop-filter: blur(10px); /* Softens the image behind */
+    text-align: center;
+}
+
+
+.contact-info h3 {
+    font-size: 2rem;
+    color: #0044cc;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.social-link {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.contact-form h4 {
+    font-size: 1.5rem;
+    color: #0044cc;
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color:rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #003399;
+}
+
+/* Tooltip */
+a[title] {
+    position: relative;
+}
+
+a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+/* General section styling */
+.section {
+    padding: 6rem 2rem;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-summary {
+    flex: 2;
+    text-align: left;
+}
+
+.about-summary h2 {
+    font-size: 2rem;
+    color: #0044cc;
+    margin-bottom: 0.5rem;
+}
+
+.about-summary p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 1rem;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+ /* Icons */
+ .social-link {
+    color: #333; /* Default color */
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0077b5; /* Hover color for LinkedIn, for example */
+}
+footer{
+    text-align: center;
+}
