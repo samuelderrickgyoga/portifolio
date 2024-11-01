@@ -52,7 +52,7 @@ nav ul li a.active {
 
 /* Hero Section */
 .hero {
-    background-image: url('../images/software-developer-6521720_1280.jpg');
+    background-image: url('/images/software-developer-6521720_1280.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -140,7 +140,7 @@ nav ul li a.active {
 #contact {
     background-color: #999;
     color: #fff;
-    background-image: url('../images/binary-code-4437421_1280.jpg');
+    background-image: url('/images/binary-code-4437421_1280.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
