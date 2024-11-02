@@ -74,3 +74,15 @@ function sendEmail(event) {
             alert('Failed to send message, please try again.');
         });
 }
+// Function to toggle navigation visibility
+function toggleNav() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('navbar-visible');
+}
+// JavaScript for toggling nav in small screens
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('nav');
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});

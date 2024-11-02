@@ -14,8 +14,12 @@
 
     <!-- Navigation Bar -->
     <header>
+        <!-- Navigation Toggle Button for smaller screens -->
+        <button class="nav-toggle" aria-label="toggle navigation" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </button>
         <nav>
-            <ul id="navbar">
+            <ul id="navbar" class="navbar">
                 <li><a href="#home" class="nav-link" title="Go to Home">Home</a></li>
                 <li><a href="#about" class="nav-link" title="Learn more About Me">About</a></li>
                 <li><a href="#projects" class="nav-link" title="Check out My Projects">Projects</a></li>
@@ -23,6 +27,7 @@
             </ul>
         </nav>
     </header>
+
 
     <!-- Sections -->
     <section id="home" class="section hero">

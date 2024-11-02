@@ -377,3 +377,140 @@ a[title]:hover::after {
 footer{
     text-align: center;
 }
+
+
+
+/* Media Queries */
+
+/* Navbar becomes a side navigation on small screens */
+/* Style for smaller screens */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show nav-toggle button and hide navbar on smaller screens */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    #navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar.navbar-visible {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: #0044cc;
+        transition: left 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* When nav is open */
+    .nav-open nav ul {
+        left: 0;
+    }
+}
+
+/* Hero section adjustments for small devices */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero pre {
+        font-size: 1rem;
+    }
+
+    .cta {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Section content layout adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Reduce modal max-width on small devices */
+    .modal-content {
+        max-width: 90%;
+    }
+}
+
+/* About section image resizing */
+@media (max-width: 600px) {
+    .profile-pic img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Footer and social link styling */
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .social-link {
+        font-size: 1.2rem;
+    }
+}
