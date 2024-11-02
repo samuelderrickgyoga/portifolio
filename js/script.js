@@ -54,11 +54,13 @@ function closeModal(modalId) {
 window.onclick = function(event) {
     const modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {
-        if (event.target == modal) {
+        // Close modal if click happens outside of the modal content
+        if (event.target.classList.contains('modal')) {
             modal.style.display = "none";
         }
     });
-}
+};
+
 // email sending
 (function () {
     emailjs.init("gROxMEzoBj9e_eSpk"); // Replace with your actual user_id
@@ -74,6 +76,10 @@ function sendEmail(event) {
             alert('Failed to send message, please try again.');
         });
 }
+document.getElementById('contact-form').addEventListener('submit', sendEmail);
+
+
+
 // Function to toggle navigation visibility
 function toggleNav() {
     const navbar = document.getElementById('navbar');
@@ -85,4 +91,10 @@ const nav = document.querySelector('nav');
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
+});
+// Close nav when clicking outside
+document.addEventListener('click', (e) => {
+    if (document.body.classList.contains('nav-open') && !nav.contains(e.target) && !navToggle.contains(e.target)) {
+        document.body.classList.remove('nav-open');
+    }
 });

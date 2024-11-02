@@ -46,36 +46,47 @@ graphic design projects.</pre>
             <div class="profile-pic">
                 <img src="images/pics.jpg" alt="Samuel Derrick Gyoga">
             </div>
-            
+
             <!-- About Me Summary -->
             <div class="about-summary">
                 <h2>About Me</h2>
                 <p>
-                    Hi, I'm Samuel Derrick Gyoga—a Computer Sciencist with a love for creating impactful digital experiences. My expertise includes backend development, database management, UI/UX design, embedded systems and a solid foundation in Python, Java, and C/C++ plus a handfull of webdesigning frameworks.
+                    Hi, I'm Samuel Derrick Gyoga—a Computer Sciencist with a love for creating impactful digital
+                    experiences. My expertise includes backend development, database management, UI/UX design, embedded
+                    systems and a solid foundation in Python, Java, and C/C++ plus a handfull of webdesigning
+                    frameworks.
                 </p>
                 <p>
-                    I’ve worked on projects like e-commerce sites, travel apps, and chat platforms, organisation websites... Always up for a challenge, I combine skills in web design and systems development to bring innovative ideas to life.
+                    I’ve worked on projects like e-commerce sites, travel apps, and chat platforms, organisation
+                    websites... Always up for a challenge, I combine skills in web design and systems development to
+                    bring innovative ideas to life.
                 </p>
             </div>
         </div>
     </section>
-    
+
 
     <section id="projects" class="section">
         <h2>Some Of My Projects</h2>
-        
+
         <div class="project-grid">
             <div class="project" onclick="openModal('project1Modal')" title="Tap or click to view Gallery">
                 <h3>Victory Fc</h3>
-                <p>Victory Women FC is an Ottawa-based women's soccer club empowering girls and women through soccer, mental health support, and mentorship, fostering growth and community connection on and off the field.</p>
+                <p>Victory Women FC is an Ottawa-based women's soccer club empowering girls and women through soccer,
+                    mental health support, and mentorship, fostering growth and community connection on and off the
+                    field.</p>
             </div>
             <div class="project" onclick="openModal('project2Modal')" title="Tap or click to view Gallery">
                 <h3>Travel App</h3>
-                <p>The Travel App was a convenient platform designed to streamline trip planning, offering features like destination discovery, itinerary management, and real-time updates to enhance the travel experience for users.</p>
+                <p>The Travel App was a convenient platform designed to streamline trip planning, offering features like
+                    destination discovery, itinerary management, and real-time updates to enhance the travel experience
+                    for users.</p>
             </div>
             <div class="project" onclick="openModal('project3Modal')" title="Tap or click to view Gallery">
                 <h3>Graphics Designing</h3>
-                <p>Graphic design services focus on creating visually engaging content, including logos, branding materials, and custom illustrations, to communicate ideas effectively and elevate brand identity across digital and print media.</p>
+                <p>Graphic design services focus on creating visually engaging content, including logos, branding
+                    materials, and custom illustrations, to communicate ideas effectively and elevate brand identity
+                    across digital and print media.</p>
             </div>
         </div>
         <div id="project1Modal" class="modal">
@@ -96,7 +107,7 @@ graphic design projects.</pre>
                 <h3>Travel App Gallery</h3>
                 <div class="gallery">
                     <img src="images/tr1.png" alt="Project 1 Image 1">
-                    <img src="images/tr2.png" alt="Project 1 Image 2">
+
                     <img src="images/tr3.png" alt="Project 1 Image 3">
                     <!-- Add more images as needed -->
                 </div>
@@ -107,7 +118,7 @@ graphic design projects.</pre>
                 <span class="close" onclick="closeModal('project3Modal')">&times;</span>
                 <h3>Graphics Designing Gallery</h3>
                 <div class="gallery">
-                    <img src="images/p1.png" alt="Project 1 Image 1">
+
                     <img src="images/p5.png" alt="Project 1 Image 2">
                     <img src="images/p3.png" alt="Project 1 Image 3">
                     <!-- Add more images as needed -->
@@ -121,38 +132,43 @@ graphic design projects.</pre>
             <!-- Contact Information -->
             <div class="contact-info">
                 <h3>Contact Me</h3>
-                <p><strong>Email:</strong> <a href="mailto:samuelderrickgyoga@gmail.com">samuelderrickgyoga@gmail.com</a></p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:samuelderrickgyoga@gmail.com">samuelderrickgyoga@gmail.com</a></p>
                 <p><strong>Phone:</strong> +256775588764</p>
                 <p><strong>Location:</strong> Kampala, Uganda</p>
-                
+
                 <!-- Social Media Links -->
                 <h4 style="color: red;">Follow Me</h4>
                 <p>
-                    <a href="https://github.com/samuelderrickgyoga" class="social-link"><i class="fab fa-github" title="follow me on github"></i></a>
-                    <a href="https://linkedin.com/in/samuel-derrick-gyoga-481319300/" class="social-link"><i class="fab fa-linkedin" title="follow me on linkedin"></i></a>
-                    <a href="https://x.com/GyogaSamue64052" class="social-link"><i class="fab fa-twitter" title="follow me on X"></i></a>
-                    <a href="https://www.facebook.com/samuel.derrickjogga" class="social-link"><i class="fab fa-facebook" title="follow me on Facebook"></i></a>
+                    <a href="https://github.com/samuelderrickgyoga" class="social-link"><i class="fab fa-github"
+                            title="follow me on github"></i></a>
+                    <a href="https://linkedin.com/in/samuel-derrick-gyoga-481319300/" class="social-link"><i
+                            class="fab fa-linkedin" title="follow me on linkedin"></i></a>
+                    <a href="https://x.com/GyogaSamue64052" class="social-link"><i class="fab fa-twitter"
+                            title="follow me on X"></i></a>
+                    <a href="https://www.facebook.com/samuel.derrickjogga" class="social-link"><i
+                            class="fab fa-facebook" title="follow me on Facebook"></i></a>
 
                 </p>
-                
+
             </div>
-    
+
             <!-- Contact Form -->
             <div class="contact-form">
                 <h4>Get In Touch</h4>
                 <form id="contact-form" onsubmit="sendEmail(event)">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
-                
+
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
-                
+
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-                
+
                     <button type="submit">Send Message</button>
                 </form>
-                
+
             </div>
         </div>
     </section>
@@ -161,9 +177,9 @@ graphic design projects.</pre>
     </footer>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="js/script.js"></script>
-    
 
-    
+
+
 </body>
 
 </html>
