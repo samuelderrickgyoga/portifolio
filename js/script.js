@@ -63,19 +63,23 @@ window.onclick = function(event) {
 
 // email sending
 (function () {
-    emailjs.init("gROxMEzoBj9e_eSpk"); // Replace with your actual user_id
+    emailjs.init("gROxMEzoBj9e_eSpk"); // Replace with your actual public key
 })();
-
 function sendEmail(event) {
     event.preventDefault(); // Prevent form from submitting the traditional way
 
+    console.log("Sending email...");
+
     emailjs.sendForm('service_51r2ddc', 'template_lxl8c8a', '#contact-form')
         .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
             alert('Message sent successfully!');
         }, (error) => {
+            console.error('EmailJS error:', error); // Log the error
             alert('Failed to send message, please try again.');
         });
 }
+
 document.getElementById('contact-form').addEventListener('submit', sendEmail);
 
 
