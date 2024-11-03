@@ -464,11 +464,15 @@ footer {
 /* Hero section adjustments for small devices */
 @media (max-width: 768px) {
     .hero {
+        width: 91%;
         height: 80vh;
         /* Adjusted height for smaller screens */
         background-position: top;
         /* Adjusted for better visibility */
         padding: 1rem;
+    }
+    .hero .hero-content{
+        width: 91%;
     }
 
     .hero h1 {
