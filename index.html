@@ -156,28 +156,33 @@ graphic design projects.</pre>
             <!-- Contact Form -->
             <div class="contact-form">
                 <h4>Get In Touch</h4>
-                <form action="https://formspree.io/f/xldejanp" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <!-- HTML Form with the correct ID -->
+<!-- HTML Form with the correct ID -->
+<form id="myForm" action="https://formspree.io/f/xldejanp" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
 
-                    <button type="submit">Send Message</button>
-                </form>
+    <button type="submit">Send Message</button>
+</form>
 
+<!-- Popup Notification -->
+<div id="notification" style="display: none; position: fixed; top: 20px; right: 20px; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    Message sent. Thank you!
+</div>
 
-            </div>
-        </div>
-    </section>
-    <footer class="bg-gray-800 text-white p-4 text-center">
-        <p>&copy; 2024 Samuel Derrick Gyoga All rights reserved.</p>
-    </footer>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="js/script.js"></script>
+<footer class="bg-gray-800 text-white p-4 text-center">
+    <p>&copy; 2024 Samuel Derrick Gyoga All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+
 
 
 

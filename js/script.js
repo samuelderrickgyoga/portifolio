@@ -83,3 +83,30 @@ document.addEventListener('click', (e) => {
         document.body.classList.remove('nav-open');
     }
 });
+
+
+
+
+// prevent form redirecting
+$(document).ready(function() {
+    $("#myForm").on("submit", function(event) {
+        event.preventDefault(); // Prevent default submission
+
+        var formData = $(this).serialize(); // Serialize form data
+
+        // Send form data via AJAX
+        $.ajax({
+            url: $(this).attr("action"), // Formspree action URL
+            method: "POST",
+            data: formData,
+            dataType: "json", // Expecting JSON response
+            success: function(response) {
+                // Show popup notification
+                $("#notification").fadeIn().delay(2000).fadeOut();
+            },
+            error: function(err) {
+                console.error("Form submission failed:", err);
+            }
+        });
+    });
+});
